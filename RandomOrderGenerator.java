@@ -10,11 +10,11 @@ public class RandomOrderGenerator {
 	 * @return
 	 */
 	public static int[] getRandomOrder(int n) {
-		Integer[] numbers = new Integer[n];
-		for (int j = 0; j < numbers.length; j++) {
-			numbers[j] = j + 1;
+		Integer[] numb = new Integer[n];
+		for (int j = 0; j < num.length; j++) {
+			num[j] = j + 1;
 		}
-		List<Integer> numList = Arrays.asList(numbers);
+		List<Integer> numList = Arrays.asList(num);
 		Collections.shuffle(numList);
 		int[] array = numList.stream().mapToInt(i->i).toArray();	
 		return array;
